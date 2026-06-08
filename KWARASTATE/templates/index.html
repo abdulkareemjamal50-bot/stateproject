@@ -1,3 +1,7 @@
+{% load static %}
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,9 +13,9 @@
 
     <title>VaultEdge - Financial Planning &amp; Investment HTML Template</title>
 
-    <link rel="icon" href="img/core-img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/custom-override.css">
+    <link rel="icon" href="{% static "img/core-img/favicon.ico" %}">
+    <link rel="stylesheet" href="{% static "style.css" %}">
+    <link rel="stylesheet" href="{% static "css/custom-override.css" %}">
 </head>
 
 <body>
@@ -459,11 +463,11 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <script src="js/bootstrap/popper.min.js"></script>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <script src="js/plugins/plugins.js"></script>
-    <script src="js/active.js"></script>
-    <script src="js/vaultedge.js"></script>
+    <script src={% static "js/jquery/jquery-2.2.4.min.js" %}></script>
+    <script src={% static "js/bootstrap/popper.min.js" %}></script>
+    <script src={% static "js/bootstrap/bootstrap.min.js" %}></script>
+    <script src={% static "js/plugins/plugins.js" %}></script>
+    <script src={% static "js/active.js" %}></script>
+    <script src={% static "js/vaultedge.js" %}></script>
 </body>
 </html>
