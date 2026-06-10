@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 # Create your views here.
-def state(request):
-    return render(request, "state.html")
+def index(request):
+    return render(request, "index.html")
 
 def about(request):
     return render (request, "about.html")
@@ -13,8 +13,8 @@ def contact(request):
 def elements(request):
     return render (request, "elements.html")
 
-def index(request):
-    return render (request, "index.html")
+def state(request):
+    return render (request, "state.html")
 
 def post(request):
     return render (request, "post.html")

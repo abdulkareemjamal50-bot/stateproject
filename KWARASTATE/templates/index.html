@@ -30,8 +30,7 @@
             <!-- Logo -->
             <div class="ve-logo">
                 <a href="index.html">
-                    <span class="ve-logo-icon">V</span>
-                    <span class="ve-logo-text">Vault<strong>Edge</strong></span>
+                <img src="{% static "img/kwara.png" %}" alt="" width="70px">
                 </a>
             </div>
 
@@ -117,8 +116,8 @@
         </div>
         <!-- Right Panel: overlapping image cards -->
         <div class="ve-hero-right">
-            <div class="ve-hero-img-main bg-img" style="background-image:url(img/bg-img/1.jpg);"></div>
-            <div class="ve-hero-img-accent bg-img" style="background-image:url(img/bg-img/3.jpg);"></div>
+            <div class="ve-hero-img-main bg-img" style="background-image:url('{% static 'img/bg-img/1.jpg' %}');"></div>
+            <div class="ve-hero-img-accent bg-img" style="background-image:url('{% static 'img/bg-img/3.jpg' %}');"></div>
             <!-- Floating card -->
             <div class="ve-float-card">
                 <i class="fa fa-line-chart"></i>
@@ -202,7 +201,7 @@
                 <!-- Image Side -->
                 <div class="col-12 col-lg-5">
                     <div class="ve-whyus-img-wrap wow fadeInLeft" data-wow-delay="100ms">
-                        <div class="ve-whyus-img-main bg-img" style="background-image:url(img/bg-img/5.jpg);"></div>
+                        <div class="ve-whyus-img-main bg-img" style="background-image:url('{% static 'img/bg-img/5.jpg' %}');"></div>
                         <div class="ve-whyus-badge">
                             <strong>12+</strong>
                             <span>Years of Financial Excellence</span>
@@ -276,7 +275,7 @@
                     <div class="ve-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <p>"VaultEdge transformed how I manage my finances. My portfolio has grown by 22% in just 18 months. Incredible service!"</p>
                     <div class="ve-testi-author">
-                        <div class="ve-testi-avatar bg-img" style="background-image:url(img/bg-img/32.jpg);"></div>
+                        <div class="ve-testi-avatar bg-img" style="background-image:url('{% static 'img/bg-img/32.jpg' %}');"></div>
                         <div><strong>Alex Morgan</strong><span>Entrepreneur</span></div>
                     </div>
                 </div>
@@ -284,7 +283,7 @@
                     <div class="ve-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <p>"The retirement planning team at VaultEdge gave me total peace of mind. Professional, responsive, and results-driven."</p>
                     <div class="ve-testi-author">
-                        <div class="ve-testi-avatar bg-img" style="background-image:url(img/bg-img/33.jpg);"></div>
+                        <div class="ve-testi-avatar bg-img" style="background-image:url('{% static 'img/bg-img/33.jpg' %}');"></div>
                         <div><strong>Sarah Patel</strong><span>Marketing Director</span></div>
                     </div>
                 </div>
@@ -292,7 +291,7 @@
                     <div class="ve-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <p>"Switched from our old firm and couldn't be happier. Their tax advisory alone saved us thousands in the first year."</p>
                     <div class="ve-testi-author">
-                        <div class="ve-testi-avatar bg-img" style="background-image:url(img/bg-img/14.jpg);"></div>
+                        <div class="ve-testi-avatar bg-img" style="background-image:url('{% static 'img/bg-img/14.jpg' %}');"></div>
                         <div><strong>James Liu</strong><span>Business Owner</span></div>
                     </div>
                 </div>
@@ -301,7 +300,7 @@
     </section>
 
     <!-- ===== CTA BANNER ===== -->
-    <section class="ve-cta-banner bg-img" style="background-image:url(img/bg-img/6.jpg);">
+    <section class="ve-cta-banner bg-img" style="background-image:url('{% static 'img/bg-img/6.jpg' %}');">
         <div class="ve-cta-overlay"></div>
         <div class="container ve-cta-content">
             <div class="row align-items-center">
@@ -327,7 +326,7 @@
             <div class="row">
                 <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="100ms">
                     <div class="ve-insight-card">
-                        <div class="ve-insight-img bg-img" style="background-image:url(img/bg-img/10.jpg);"></div>
+                        <div class="ve-insight-img bg-img" style="background-image:url('{% static 'img/bg-img/10.jpg' %}');"></div>
                         <div class="ve-insight-body">
                             <span class="ve-insight-cat">Investment</span>
                             <h5><a href="single-post.html">5 Smart Investment Strategies for 2025</a></h5>
@@ -341,7 +340,7 @@
                 </div>
                 <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="250ms">
                     <div class="ve-insight-card">
-                        <div class="ve-insight-img bg-img" style="background-image:url(img/bg-img/11.jpg);"></div>
+                        <div class="ve-insight-img bg-img" style="background-image:url('{% static 'img/bg-img/11.jpg' %}');"></div>
                         <div class="ve-insight-body">
                             <span class="ve-insight-cat">Credit</span>
                             <h5><a href="single-post.html">Understanding Your Credit Score in 2025</a></h5>
@@ -355,7 +354,7 @@
                 </div>
                 <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="400ms">
                     <div class="ve-insight-card">
-                        <div class="ve-insight-img bg-img" style="background-image:url(img/bg-img/12.jpg);"></div>
+                        <div class="ve-insight-img bg-img" style="background-image:url('{% static 'img/bg-img/12.jpg' %}');"></div>
                         <div class="ve-insight-body">
                             <span class="ve-insight-cat">Savings</span>
                             <h5><a href="single-post.html">Building Wealth in Your 30s — A Full Guide</a></h5>
