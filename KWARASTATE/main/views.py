@@ -10,17 +10,24 @@ def about(request):
 def contact(request):
     return render (request, "contact.html")
 
-def elements(request):
-    return render (request, "elements.html")
+def government(request):
+    return render (request, "government.html")
 
-def state(request):
-    return render (request, "state.html")
+def project(request):
+    return render (request, "project.html")
 
-def post(request):
-    return render (request, "post.html")
+def ministries(request):
+    return render (request, "ministries.html")
 
 def services(request):
     return render (request, "services.html")
 
-def singlePost(request):
-    return render (request, "single-post.html")
+def investment(request):
+    return render (request, "investment.html")
+
+def tourism(request):
+    return render (request, "tourism.html")
+
+
+def news(request):
+    return render (request, "news.html")
