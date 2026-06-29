@@ -31,6 +31,7 @@
                         <h2>Book a <span>Free Consultation</span></h2>
                         <p>Fill in the form and one of our advisors will contact you within one business day.</p>
                         <form class="ve-contact-form" action="#" method="post">
+                            {% csrf_token %}
                             <div class="ve-form-row">
                                 <div class="ve-form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required></div>
                                 <div class="ve-form-group"><label>Email Address</label><input type="email" placeholder="Your email" required></div>
