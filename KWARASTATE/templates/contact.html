@@ -33,16 +33,16 @@
                         <form class="ve-contact-form" action="#" method="post">
                             {% csrf_token %}
                             <div class="ve-form-row">
-                                <div class="ve-form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required></div>
-                                <div class="ve-form-group"><label>Email Address</label><input type="email" placeholder="Your email" required></div>
+                                <div class="ve-form-group"><label>Full Name</label><input type="text" name="full_name" placeholder="Your full name" required></div>
+                                <div class="ve-form-group"><label>Email Address</label><input type="email" name="email" placeholder="Your email" required></div>
                             </div>
                             <div class="ve-form-row">
-                                <div class="ve-form-group"><label>Phone Number</label><input type="tel" placeholder="Your phone"></div>
+                                <div class="ve-form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="Your phone"></div>
                                 <div class="ve-form-group"><label>Service Interested In</label>
-                                    <select><option>Select a service</option><option>Investment Planning</option><option>Wealth Management</option><option>Retirement Planning</option><option>Tax Advisory</option><option>Risk Management</option></select>
+                                    <select name="service"><option>Select a service</option><option>Investment Planning</option><option>Wealth Management</option><option>Retirement Planning</option><option>Tax Advisory</option><option>Risk Management</option></select>
                                 </div>
                             </div>
-                            <div class="ve-form-group"><label>Your Message</label><textarea rows="5" placeholder="Tell us about your financial goals..."></textarea></div>
+                            <div class="ve-form-group"><label>Your Message</label><textarea name="message" rows="5" placeholder="Tell us about your financial goals..."></textarea></div>
                             <button type="submit" class="ve-btn-primary">Send Message <i class="fa fa-paper-plane"></i></button>
                         </form>
                     </div>
