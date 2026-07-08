@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 
 # Create your models here.
 class ContactMessage(models.Model):
@@ -20,8 +21,8 @@ class BlogCategory(models.Model):
 
 
     class Meta:
-        verbos_name = "Blog Category"
-        verbos_name_plural = "Blog Categories"
+        verbose_name = "Blog Category"
+        verbose_name_plural = "Blog Categories"
         ordering = ["name"]
 
     def __str__(self):
@@ -30,7 +31,32 @@ class BlogCategory(models.Model):
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=1000)
-    slug = models.CharField(max_length=250, unique=True, blank=True)
+    slug = models.SlugField(max_length=250, unique=True, blank=True)
 
     category = models.ForeignKey(BlogCategory, on_delete=models.SET_NULL, null=True, blank=True, related_name="posts" )
+
+    feature_image = models.ImageField(upload_to="blog/", blank=True, null=True)
     
+    content= models.TextField()
+
+    published_date = models.DateField()
+
+    is_published = models.BooleanField(default=True)
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+
+    class Meta:
+        ordering = ["-published_date"]
+        verbose_name = "Blog Post"
+        verbose_name_plural = "Blog Posts"
+
+    def __str__(self):
+        return self.title
+    
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug =slugify(self.title)
+            super().save(*args, **kwargs)
+
