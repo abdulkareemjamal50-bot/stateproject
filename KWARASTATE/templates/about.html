@@ -4,15 +4,15 @@
 {% block content %}
 
 
-    <section class="ve-page-hero" style="background-image:url(img/bg-img/13.jpg);">
+    <section class="ve-page-hero" style="background-image:url('{% static "img/bg-img/art.png" %}');">
         <div class="ve-page-hero-overlay"></div>
         <div class="container ve-page-hero-content">
-            <span class="ve-section-tag">Our Story</span>
-            <h1>Building Trust Since <span>2012</span></h1>
+            <span class="ve-section-tag" style="color:white">ABOUT KWARA STATE</span>
+            <h1> Building a Prosperous and <span>Inclusive Future</span></h1>
             <nav aria-label="breadcrumb">
                 <ol class="ve-breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active">About Us</li>
+                     <li><a href="{% url 'index' %}">Home</a></li>
+                    <li class="active">About Kwara</li>
                 </ol>
             </nav>
         </div>
@@ -24,9 +24,11 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6 wow fadeInLeft" data-wow-delay="100ms">
                     <div class="ve-about-img-stack">
-                        <div class="ve-about-img-1 bg-img" style="background-image:url(img/bg-img/14.jpg);"></div>
-                        <div class="ve-about-img-2 bg-img" style="background-image:url(img/bg-img/5.jpg);"></div>
-                        <div class="ve-about-ribbon"><strong>12+</strong><span>Years of Trust</span></div>
+                        <div class="ve-about-img-1 bg-img" style="background-image:url('{% static "img/bg-img/art.png" %}');"></div>
+                        <div class="ve-about-img-2 bg-img" style="background-image:url('{% static "img/bg-img/road.png" %}');"></div>
+                       <div class="ve-about-ribbon" >
+    <strong style="color:white">Kwara State</strong><span>Since 1967</span>
+</div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 wow fadeInRight" data-wow-delay="200ms">
@@ -45,7 +47,7 @@ Our mission is to showcase the beauty, history, opportunities, and achievements 
                             <div class="ve-af-item"><i class="fa fa-check"></i><span>Peaceful and welcoming communities</span></div>
                             <div class="ve-af-item"><i class="fa fa-check"></i><span>Thriving agricultural and business opportunities</span></div>
                         </div>
-                        <a href="services.html" class="ve-btn-primary mt-30">View Our Services</a>
+                        <a href="{% url 'services' %}" class="ve-btn-primary mt-30" style="color:white">View Our Services</a>
                     </div>
                 </div>
             </div>
@@ -56,26 +58,48 @@ Our mission is to showcase the beauty, history, opportunities, and achievements 
     <section class="ve-mvv-section">
         <div class="container">
             <div class="ve-section-header text-center">
-                <span class="ve-section-tag">Our Foundation</span>
+                <span class="ve-section-tag"style="color:white">Our Foundation</span>
                 <h2>Mission, Vision &amp; <span>Values</span></h2>
             </div>
-            <div class="ve-mvv-grid">
-                <div class="ve-mvv-card wow fadeInUp" data-wow-delay="100ms">
-                    <div class="ve-mvv-icon"><i class="fa fa-bullseye"></i></div>
-                    <h4>Our Mission</h4>
-                    <p>To democratise access to world-class financial planning, empowering every client to make smarter money decisions with confidence.</p>
-                </div>
-                <div class="ve-mvv-card wow fadeInUp" data-wow-delay="250ms">
-                    <div class="ve-mvv-icon"><i class="fa fa-eye"></i></div>
-                    <h4>Our Vision</h4>
-                    <p>To be the most trusted financial partner for the next generation of wealth builders — globally recognised for integrity and innovation.</p>
-                </div>
-                <div class="ve-mvv-card wow fadeInUp" data-wow-delay="400ms">
-                    <div class="ve-mvv-icon"><i class="fa fa-heart"></i></div>
-                    <h4>Our Values</h4>
-                    <p>Transparency, client-first thinking, continuous innovation, and an unwavering commitment to ethical financial practice.</p>
-                </div>
-            </div>
+           <div class="ve-mvv-grid">
+
+    <div class="ve-mvv-card wow fadeInUp" data-wow-delay="100ms">
+        <div class="ve-mvv-icon">
+            <i class="fa fa-bullseye"></i>
+        </div>
+        <h4>Our Mission</h4>
+        <p>
+            To deliver transparent, inclusive, and people-centered governance by
+            providing quality public services, promoting sustainable development,
+            and improving the standard of living for all residents of Kwara State.
+        </p>
+    </div>
+
+    <div class="ve-mvv-card wow fadeInUp" data-wow-delay="250ms">
+        <div class="ve-mvv-icon">
+            <i class="fa fa-eye"></i>
+        </div>
+        <h4>Our Vision</h4>
+        <p>
+            To build a prosperous, peaceful, and innovative Kwara State where
+            every citizen has equal access to opportunities, quality infrastructure,
+            excellent education, healthcare, and sustainable economic growth.
+        </p>
+    </div>
+
+    <div class="ve-mvv-card wow fadeInUp" data-wow-delay="400ms">
+        <div class="ve-mvv-icon">
+            <i class="fa fa-heart"></i>
+        </div>
+        <h4>Our Core Values</h4>
+        <p>
+            Integrity, accountability, transparency, excellence, innovation,
+            inclusiveness, respect for the rule of law, and dedicated service to
+            the people of Kwara State.
+        </p>
+    </div>
+
+</div>
         </div>
     </section>
 
@@ -84,42 +108,42 @@ Our mission is to showcase the beauty, history, opportunities, and achievements 
         <div class="container">
             <div class="ve-section-header text-center">
                 <span class="ve-section-tag">Meet the Experts</span>
-                <h2>Our Leadership <span>Team</span></h2>
-                <p>Seasoned professionals with decades of combined experience across global financial markets.</p>
+                <h2>Meet the State <span> Leadership</span></h2>
+                <p>Meet the elected and appointed officials leading the development and administration of Kwara State.</p>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay="100ms">
                     <div class="ve-team-card">
-                        <div class="ve-team-img bg-img" style="background-image:url(img/bg-img/15.jpg);"></div>
+                        <div class="ve-team-img bg-img" style="background-image:url('{% static "img/governor.png" %}');"></div>
                         <div class="ve-team-info">
-                            <h5>Jordan Hayes</h5><span>Chief Executive Officer</span>
+                            <h5>AbdulRahman AbdulRazaq</h5><span>Executive Governor</span>
                             <div class="ve-team-social"><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay="200ms">
                     <div class="ve-team-card">
-                        <div class="ve-team-img bg-img" style="background-image:url(img/bg-img/16.jpg);"></div>
+                        <div class="ve-team-img bg-img" style="background-image:url('{% static "img/alabi.png" %}');"></div>
                         <div class="ve-team-info">
-                            <h5>Taylor Brooks</h5><span>Chief Investment Officer</span>
+                            <h5>Kayode Alabi</h5><span>Deputy Governor</span>
                             <div class="ve-team-social"><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay="300ms">
                     <div class="ve-team-card">
-                        <div class="ve-team-img bg-img" style="background-image:url(img/bg-img/17.jpg);"></div>
+                        <div class="ve-team-img bg-img" style="background-image:url('{% static "img/yakubu.png" %}');"></div>
                         <div class="ve-team-info">
-                            <h5>Morgan Lane</h5><span>Head of Wealth Planning</span>
+                            <h5>Speaker Yakubu Danladi</h5><span>Speaker of the State House of Assembly</span>
                             <div class="ve-team-social"><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay="400ms">
                     <div class="ve-team-card">
-                        <div class="ve-team-img bg-img" style="background-image:url(img/bg-img/18.jpg);"></div>
+                        <div class="ve-team-img bg-img" style="background-image:url('{% static "img/adebara.png" %}');"></div>
                         <div class="ve-team-info">
-                            <h5>Casey Rivera</h5><span>Head of Risk &amp; Compliance</span>
+                            <h5>Justice A.A.Adebara</h5><span>Cheif Judge of Kwara State</span>
                             <div class="ve-team-social"><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div>
                         </div>
                     </div>
@@ -127,32 +151,41 @@ Our mission is to showcase the beauty, history, opportunities, and achievements 
             </div>
         </div>
     </section>
-    <section class="ve-counter-section">
-        <div class="container">
-            <div class="ve-counter-grid">
-                <div class="ve-counter-item wow fadeInUp" data-wow-delay="100ms">
-                    <i class="fa fa-users"></i>
-                    <strong class="counter" data-count="50000">0</strong><span>+</span>
-                    <p>Happy Clients</p>
-                </div>
-                <div class="ve-counter-item wow fadeInUp" data-wow-delay="200ms">
-                    <i class="fa fa-briefcase"></i>
-                    <strong class="counter" data-count="4200">0</strong><span>M+</span>
-                    <p>Assets Managed</p>
-                </div>
-                <div class="ve-counter-item wow fadeInUp" data-wow-delay="300ms">
-                    <i class="fa fa-globe"></i>
-                    <strong class="counter" data-count="30">0</strong><span>+</span>
-                    <p>Countries Served</p>
-                </div>
-                <div class="ve-counter-item wow fadeInUp" data-wow-delay="400ms">
-                    <i class="fa fa-trophy"></i>
-                    <strong class="counter" data-count="18">0</strong><span></span>
-                    <p>Industry Awards</p>
-                </div>
+  <section class="ve-counter-section">
+    <div class="container">
+        <div class="ve-counter-grid">
+
+            <div class="ve-counter-item wow fadeInUp" data-wow-delay="100ms">
+                <i class="fa fa-map-marker"></i>
+                <strong class="counter" data-count="16">0</strong>
+                <span></span>
+                <p>Local Government Areas</p>
             </div>
+
+            <div class="ve-counter-item wow fadeInUp" data-wow-delay="200ms">
+                <i class="fa fa-university"></i>
+                <strong class="counter" data-count="60">0</strong>
+                <span>+</span>
+                <p>Government Ministries</p>
+            </div>
+
+            <div class="ve-counter-item wow fadeInUp" data-wow-delay="300ms">
+                <i class="fa fa-leaf"></i>
+                <strong class="counter" data-count="200">0</strong>
+                <span>+</span>
+                <p>Agricultural Communities</p>
+            </div>
+
+            <div class="ve-counter-item wow fadeInUp" data-wow-delay="400ms">
+                <i class="fa fa-plane "></i>
+                <strong class="counter" data-count="50">0</strong>
+                <span>+</span>
+                <p>Tourist & Heritage Sites</p>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
     <section class="ve-newsletter-section">
         <div class="container">
             <div class="ve-newsletter-wrap">

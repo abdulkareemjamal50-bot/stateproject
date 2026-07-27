@@ -171,5 +171,82 @@
         new WOW().init();
     }
 
+    /* ==========================================
+   PROJECT SLIDER
+========================================== */
+
+if ($.fn.owlCarousel) {
+
+    $('.project-slider').owlCarousel({
+
+        loop: true,
+
+        margin: 30,
+
+        nav: true,
+
+        dots: false,
+
+        autoplay: true,
+
+        autoplayTimeout: 4000,
+
+        smartSpeed: 800,
+
+        responsive: {
+
+            0: {
+                items: 1
+            },
+
+            768: {
+                items: 2
+            },
+
+            1200: {
+                items: 3
+            }
+
+        }
+
+    });
+
+}
+
+})(jQuery);
+(function ($) {
+
+    // All your existing code...
+
 })(jQuery);
 
+
+// ===========================
+// Ministry Finder Search
+// ===========================
+
+const searchInput = document.getElementById("searchInput");
+
+if (searchInput) {
+
+    searchInput.addEventListener("keyup", function () {
+
+        let filter = searchInput.value.toLowerCase();
+
+        let cards = document.querySelectorAll(".finder-card");
+
+        cards.forEach(function (card) {
+
+            let text = card.textContent.toLowerCase();
+
+            if (text.includes(filter)) {
+                card.style.display = "";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+
+}

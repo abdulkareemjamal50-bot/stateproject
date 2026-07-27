@@ -1,13 +1,16 @@
 from django.shortcuts import render,redirect
-from .models import ContactMessage,BlogPost
+from .models import ContactMessage,BlogPost,Testimonial
 
 from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib import messages
 # Create your views here.
 def index(request):
+
     latest_post = (BlogPost.objects.filter(is_published=True)[:3])
-    return render(request, "index.html",{"latest_post": latest_post})
+    testimonials = (Testimonial.objects.filter(is_active=True)[:3])
+    
+    return render(request, "index.html",{"latest_post": latest_post,"testimonials": testimonials})
 
 def about(request):
     return render (request, "about.html")

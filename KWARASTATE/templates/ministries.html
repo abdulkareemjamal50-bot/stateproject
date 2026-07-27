@@ -1,64 +1,1680 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
 {% load static %}
 
-
 {% block content %}
-    <section class="ve-page-hero" style="background-image:url('{% static 'img/bg-img/24.jpg' %}');">
-        <div class="ve-page-hero-overlay"></div>
-        <div class="container ve-page-hero-content">
-            <span class="ve-section-tag">Knowledge Hub</span><h1>Financial <span>Insights &amp; Analysis</span></h1>
-            <nav aria-label="breadcrumb"><ol class="ve-breadcrumb"><li><a href="index.html">Home</a></li><li class="active">Insights</li></ol></nav>
-        </div>
-    </section>
 
-    <section class="ve-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-8">
-                    <div class="row">
-                        <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="100ms"><div class="ve-insight-card"><div class="ve-insight-img bg-img" style="background-image:url('{% static 'img/bg-img/10.jpg' %}');"></div><div class="ve-insight-body"><span class="ve-insight-cat">Investment</span><h5><a href="single-post.html">5 Smart Investment Strategies for 2025</a></h5><p>Discover the top strategies seasoned investors use to grow wealth in volatile markets.</p><div class="ve-insight-meta"><span><i class="fa fa-calendar"></i> April 26</span><a href="single-post.html">Read More <i class="fa fa-arrow-right"></i></a></div></div></div></div>
-                        <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="200ms"><div class="ve-insight-card"><div class="ve-insight-img bg-img" style="background-image:url('{% static 'img/bg-img/11.jpg' %}');"></div><div class="ve-insight-body"><span class="ve-insight-cat">Credit</span><h5><a href="single-post.html">Understanding Your Credit Score in 2025</a></h5><p>Learn the key factors that influence your credit score and how to improve it fast.</p><div class="ve-insight-meta"><span><i class="fa fa-calendar"></i> April 20</span><a href="single-post.html">Read More <i class="fa fa-arrow-right"></i></a></div></div></div></div>
-                        <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="300ms"><div class="ve-insight-card"><div class="ve-insight-img bg-img" style="background-image:url('{% static 'img/bg-img/12.jpg' %}');"></div><div class="ve-insight-body"><span class="ve-insight-cat">Savings</span><h5><a href="single-post.html">Building Wealth in Your 30s — A Full Guide</a></h5><p>The financial habits that set you up for lifelong prosperity.</p><div class="ve-insight-meta"><span><i class="fa fa-calendar"></i> April 14</span><a href="single-post.html">Read More <i class="fa fa-arrow-right"></i></a></div></div></div></div>
-                        <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="400ms"><div class="ve-insight-card"><div class="ve-insight-img bg-img" style="background-image:url('{% static 'img/bg-img/23.jpg' %}');"></div><div class="ve-insight-body"><span class="ve-insight-cat">Retirement</span><h5><a href="single-post.html">How to Retire Comfortably at 55</a></h5><p>A step-by-step roadmap to early retirement with financial security intact.</p><div class="ve-insight-meta"><span><i class="fa fa-calendar"></i> April 8</span><a href="single-post.html">Read More <i class="fa fa-arrow-right"></i></a></div></div></div></div>
-                        <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="500ms"><div class="ve-insight-card"><div class="ve-insight-img bg-img" style="background-image:url('{% static 'img/bg-img/25.jpg' %}');"></div><div class="ve-insight-body"><span class="ve-insight-cat">Tax</span><h5><a href="single-post.html">Top Tax-Saving Strategies for High Earners</a></h5><p>Legal, proven approaches to minimising your tax bill this year.</p><div class="ve-insight-meta"><span><i class="fa fa-calendar"></i> March 30</span><a href="single-post.html">Read More <i class="fa fa-arrow-right"></i></a></div></div></div></div>
-                        <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="600ms"><div class="ve-insight-card"><div class="ve-insight-img bg-img" style="background-image:url('{% static 'img/bg-img/26.jpg' %}');"></div><div class="ve-insight-body"><span class="ve-insight-cat">Markets</span><h5><a href="single-post.html">Navigating Market Volatility With Confidence</a></h5><p>Expert guidance on staying strategic when markets swing wildly.</p><div class="ve-insight-meta"><span><i class="fa fa-calendar"></i> March 22</span><a href="single-post.html">Read More <i class="fa fa-arrow-right"></i></a></div></div></div></div>
-                    </div>
-                    <div class="ve-pagination"><a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
+
+ <section class="ve-page-hero" style="background-image:url('{% static "img/bg-img/minist.jpg" %}');">
+    <div class="ve-page-hero-overlay"></div>
+
+    <div class="container ve-page-hero-content">
+
+        <span class="ve-section-tag" style="color:white">KWARA STATE MINISTRIES</span>
+        <h1>
+            Ministries Driving <span>Growth & Development</span>
+        </h1>
+
+        <p class="ve-hero-text">
+            Discover the ministries responsible for delivering quality public
+            services, implementing government policies, and advancing sustainable
+            development across Kwara State.
+        </p>
+
+        <nav aria-label="breadcrumb">
+            <ol class="ve-breadcrumb">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li class="active">Ministries</li>
+            </ol>
+        </nav>
+
+    </div>
+</section>
+<section class="ministries-about section-padding">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <div class="about-image">
+
+                    <img src="{% static 'img/bg-img/ministries.jpg' %}" alt="Ministries">
+
                 </div>
-                <div class="col-12 col-lg-4">
-                    <div class="ve-sidebar">
-                        <div class="ve-sidebar-widget">
-                            <h5 class="ve-sidebar-title">Search</h5>
-                            <div class="ve-search-box"><input type="text" placeholder="Search articles..."><button><i class="fa fa-search"></i></button></div>
-                        </div>
-                        <div class="ve-sidebar-widget">
-                            <h5 class="ve-sidebar-title">Categories</h5>
-                            <ul class="ve-cat-list">
-                                <li><a href="#">Investment <span>12</span></a></li>
-                                <li><a href="#">Wealth Management <span>8</span></a></li>
-                                <li><a href="#">Retirement <span>6</span></a></li>
-                                <li><a href="#">Tax Advisory <span>9</span></a></li>
-                                <li><a href="#">Market Analysis <span>15</span></a></li>
-                                <li><a href="#">Savings Tips <span>11</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="ve-sidebar-widget">
-                            <h5 class="ve-sidebar-title">Recent Posts</h5>
-                            <div class="ve-recent-post"><div class="ve-rp-img bg-img" style="background-image:url('{% static 'img/bg-img/10.jpg' %}');"></div><div><a href="single-post.html">5 Smart Investment Strategies for 2025</a><span><i class="fa fa-calendar"></i> April 26</span></div></div>
-                            <div class="ve-recent-post"><div class="ve-rp-img bg-img" style="background-image:url('{% static 'img/bg-img/11.jpg' %}');"></div><div><a href="single-post.html">Understanding Your Credit Score</a><span><i class="fa fa-calendar"></i> April 20</span></div></div>
-                            <div class="ve-recent-post"><div class="ve-rp-img bg-img" style="background-image:url('{% static 'img/bg-img/12.jpg' %}');"></div><div><a href="single-post.html">Building Wealth in Your 30s</a><span><i class="fa fa-calendar"></i> April 14</span></div></div>
-                        </div>
-                        <div class="ve-sidebar-widget">
-                            <h5 class="ve-sidebar-title">Popular Tags</h5>
-                            <div class="ve-tags"><a href="#">Investing</a><a href="#">Wealth</a><a href="#">Retirement</a><a href="#">Taxes</a><a href="#">Savings</a><a href="#">Portfolio</a><a href="#">Markets</a><a href="#">Planning</a><a href="#">ETFs</a></div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
+
+            <div class="col-lg-6">
+
+                <div class="about-content">
+
+                    <span class="section-tag">
+                        ABOUT THE MINISTRIES
+                    </span>
+
+                    <h2>
+                        Driving Development Through
+                        Effective Governance
+                    </h2>
+
+                    <p>
+
+                        The Ministries of the Kwara State Government play a vital role in
+                        implementing government policies, coordinating public programmes,
+                        and delivering essential services that improve the lives of citizens
+                        across the sixteen Local Government Areas.
+
+                    </p>
+
+                    <div class="about-features">
+
+                        <div class="feature-item">
+
+                            <i class="fa fa-check-circle"></i>
+
+                            Transparent Governance
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa fa-check-circle"></i>
+
+                            Efficient Public Service
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa fa-check-circle"></i>
+
+                            Sustainable Development
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa fa-check-circle"></i>
+
+                            Citizen-Focused Policies
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-    </section>
-    <section class="ve-newsletter-section"><div class="container"><div class="ve-newsletter-wrap">
-        <div class="ve-nl-left"><i class="fa fa-envelope-o"></i><div><h3>Stay Ahead of the Markets</h3><p>Weekly insights — straight to your inbox.</p></div></div>
-        <div class="ve-nl-right"><form class="ve-nl-form" action="#" method="post"><input type="email" placeholder="Enter your email address" required><button type="submit">Subscribe</button></form></div>
-    </div></div></section>
-   {% endblock  %}
+
+    </div>
+
+</section>
+<section class="ministries-directory">
+
+    <div class="container">
+
+        <div class="directory-header">
+
+            <span>MINISTRY DIRECTORY</span>
+
+            <h2>
+                Explore Government Ministries
+            </h2>
+
+            <p>
+
+                Each ministry is committed to providing effective public services,
+                implementing government policies, and driving sustainable development
+                across Kwara State.
+
+            </p>
+
+        </div>
+
+        <div class="directory-grid">
+
+            <!-- Ministry 1 -->
+
+            <div class="directory-card">
+
+                <div class="directory-icon">
+
+                    <i class="fa fa-hospital-o"></i>
+
+                </div>
+
+                <h3>Ministry of Health</h3>
+
+                <p>
+
+                    Responsible for healthcare delivery, hospitals,
+                    disease prevention and public health programmes.
+
+                </p>
+
+                <div class="directory-info">
+
+                    <span>
+                        <i class="fa fa-map-marker"></i>
+
+                        Ilorin
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa fa-phone"></i>
+
+                        +234 XXX XXX XXXX
+
+                    </span>
+
+                </div>
+
+                <a href="#" class="directory-btn">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+            <!-- Ministry 2 -->
+
+            <div class="directory-card">
+
+                <div class="directory-icon">
+
+                    <i class="fa fa-graduation-cap"></i>
+
+                </div>
+
+                <h3>Ministry of Education</h3>
+
+                <p>
+
+                    Oversees educational development, public schools,
+                    teacher welfare and digital learning initiatives.
+
+                </p>
+
+                <div class="directory-info">
+
+                    <span>
+
+                        <i class="fa fa-map-marker"></i>
+
+                        Ilorin
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa fa-phone"></i>
+
+                        +234 XXX XXX XXXX
+
+                    </span>
+
+                </div>
+
+                <a href="#" class="directory-btn">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+            <!-- Ministry 3 -->
+
+            <div class="directory-card">
+
+                <div class="directory-icon">
+
+                    <i class="fa fa-road"></i>
+
+                </div>
+
+                <h3>Ministry of Works</h3>
+
+                <p>
+
+                    Responsible for roads,
+                    bridges, public infrastructure,
+                    and state construction projects.
+
+                </p>
+
+                <div class="directory-info">
+
+                    <span>
+
+                        <i class="fa fa-map-marker"></i>
+
+                        Ilorin
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa fa-phone"></i>
+
+                        +234 XXX XXX XXXX
+
+                    </span>
+
+                </div>
+
+                <a href="#" class="directory-btn">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+            <!-- Ministry 4 -->
+
+            <div class="directory-card">
+
+                <div class="directory-icon">
+
+                    <i class="fa fa-leaf"></i>
+
+                </div>
+
+                <h3>Ministry of Agriculture</h3>
+
+                <p>
+
+                    Promoting food security,
+                    agricultural innovation,
+                    and rural development.
+
+                </p>
+
+                <div class="directory-info">
+
+                    <span>
+
+                        <i class="fa fa-map-marker"></i>
+
+                        Ilorin
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa fa-phone"></i>
+
+                        +234 XXX XXX XXXX
+
+                    </span>
+
+                </div>
+
+                <a href="#" class="directory-btn">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+            <!-- Ministry 5 -->
+
+            <div class="directory-card">
+
+                <div class="directory-icon">
+
+                    <i class="fa fa-tree"></i>
+
+                </div>
+
+                <h3>Ministry of Environment</h3>
+
+                <p>
+
+                    Protecting the environment,
+                    improving sanitation,
+                    and promoting sustainability.
+
+                </p>
+
+                <div class="directory-info">
+
+                    <span>
+
+                        <i class="fa fa-map-marker"></i>
+
+                        Ilorin
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa fa-phone"></i>
+
+                        +234 XXX XXX XXXX
+
+                    </span>
+
+                </div>
+
+                <a href="#" class="directory-btn">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+            <!-- Ministry 6 -->
+
+            <div class="directory-card">
+
+                <div class="directory-icon">
+
+                    <i class="fa fa-tint"></i>
+
+                </div>
+
+                <h3>Ministry of Water Resources</h3>
+
+                <p>
+
+                    Expanding access to clean water,
+                    water infrastructure,
+                    and sanitation services.
+
+                </p>
+
+                <div class="directory-info">
+
+                    <span>
+
+                        <i class="fa fa-map-marker"></i>
+
+                        Ilorin
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa fa-phone"></i>
+
+                        +234 XXX XXX XXXX
+
+                    </span>
+
+                </div>
+
+                <a href="#" class="directory-btn">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="featured-ministry">
+
+    <div class="container">
+
+        <div class="featured-wrapper">
+
+            <!-- Left Side -->
+
+            <div class="featured-image">
+
+                <img src="{% static 'img/bg-img/hminis.png' %}" alt="Ministry of Health">
+
+                <div class="featured-badge">
+
+                    Featured Ministry
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="featured-content">
+
+                <span class="featured-tag">
+
+                    GOVERNMENT SPOTLIGHT
+
+                </span>
+
+                <h2>
+
+                    Ministry of Health
+
+                </h2>
+
+                <p>
+
+                    The Ministry of Health is committed to ensuring quality,
+                    affordable and accessible healthcare for every resident
+                    of Kwara State through policy development, medical
+                    infrastructure, disease prevention and healthcare innovation.
+
+                </p>
+
+                <div class="achievement-grid">
+
+                    <div class="achievement-box">
+
+                        <h3>38</h3>
+
+                        <span>General Hospitals</span>
+
+                    </div>
+
+                    <div class="achievement-box">
+
+                        <h3>260+</h3>
+
+                        <span>Primary Health Centres</span>
+
+                    </div>
+
+                    <div class="achievement-box">
+
+                        <h3>120</h3>
+
+                        <span>Ongoing Projects</span>
+
+                    </div>
+
+                    <div class="achievement-box">
+
+                        <h3>16</h3>
+
+                        <span>LGAs Covered</span>
+
+                    </div>
+
+                </div>
+
+                <div class="featured-buttons">
+
+                    <a href="#" class="btn-green">
+
+                        Explore Ministry
+
+                    </a>
+
+                    <a href="#" class="btn-outline">
+
+                        View Projects
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="leadership-section">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span>GOVERNMENT LEADERSHIP</span>
+
+            <h2>Meet Our Leadership Team</h2>
+
+            <p>
+                Dedicated public servants working together to implement government
+                policies and improve the lives of the people of Kwara State.
+            </p>
+
+        </div>
+
+        <div class="leadership-grid">
+
+            <!-- Card -->
+
+            <div class="leader-card">
+
+                <img src="{% static 'img/bg-img/amina.jpg' %}" alt="Commissioner">
+
+                <div class="leader-content">
+
+                    <h3>Hon. Commissioner Dr. Amina Ahmed El-Imam</h3>
+
+                    <span>Ministry of Health</span>
+
+                    <p>
+                        Oversees healthcare policies, medical services and
+                        public health programmes throughout the state.
+                    </p>
+
+                    <a href="#">View Profile</a>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="leader-card">
+
+                <img src="{% static 'img/bg-img/lawal.jpg' %}" alt="Commissioner">
+
+                <div class="leader-content">
+
+                    <h3>Hon. Commissioner Dr. Lawal O. Olohungbebe</h3>
+
+                    <span>Ministry of Education</span>
+
+                    <p>
+                        Leads initiatives that strengthen education,
+                        improve learning environments and support teachers.
+                    </p>
+
+                    <a href="#">View Profile</a>
+
+                </div>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="leader-card">
+
+                <img src="{% static 'img/bg-img/razaq.jpg' %}" alt="Commissioner">
+
+                <div class="leader-content">
+
+                    <h3>Hon. Commissioner Abdulquawiy Olododo</h3>
+
+                    <span>Ministry of Works</span>
+
+                    <p>
+                        Supervises infrastructure projects including roads,
+                        bridges and public facilities.
+                    </p>
+
+                    <a href="#">View Profile</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="ministry-categories">
+
+    <div class="container">
+
+        <div class="category-header">
+
+            <span>MINISTRY CATEGORIES</span>
+
+            <h2>Government Ministries by Sector</h2>
+
+            <p>
+                Explore ministries grouped according to their areas of responsibility,
+                making it easier for citizens and visitors to locate the services they need.
+            </p>
+
+        </div>
+
+        <div class="category-grid">
+
+            <!-- Infrastructure -->
+
+            <div class="category-box">
+
+                <div class="category-icon">
+
+                    <i class="fa fa-building"></i>
+
+                </div>
+
+                <h3>Infrastructure</h3>
+
+                <ul>
+
+                    <li>Ministry of Works</li>
+
+                    <li>Ministry of Transport</li>
+
+                    <li>Ministry of Housing</li>
+
+                    <li>Ministry of Water Resources</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Education -->
+
+            <div class="category-box">
+
+                <div class="category-icon">
+
+                    <i class="fa fa-graduation-cap"></i>
+
+                </div>
+
+                <h3>Education & Youth</h3>
+
+                <ul>
+
+                    <li>Ministry of Education</li>
+
+                    <li>Ministry of Youth Development</li>
+
+                    <li>Ministry of Sports</li>
+
+                    <li>Technical Education Board</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Health -->
+
+            <div class="category-box">
+
+                <div class="category-icon">
+
+                    <i class="fa fa-heartbeat"></i>
+
+                </div>
+
+                <h3>Health & Welfare</h3>
+
+                <ul>
+
+                    <li>Ministry of Health</li>
+
+                    <li>Primary Healthcare Board</li>
+
+                    <li>Women Affairs</li>
+
+                    <li>Social Development</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Agriculture -->
+
+            <div class="category-box">
+
+                <div class="category-icon">
+
+                    <i class="fa fa-leaf"></i>
+
+                </div>
+
+                <h3>Agriculture</h3>
+
+                <ul>
+
+                    <li>Ministry of Agriculture</li>
+
+                    <li>Livestock Development</li>
+
+                    <li>Food Security</li>
+
+                    <li>Rural Development</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Economy -->
+
+            <div class="category-box">
+
+                <div class="category-icon">
+
+                    <i class="fa fa-line-chart"></i>
+
+                </div>
+
+                <h3>Economic Development</h3>
+
+                <ul>
+
+                    <li>Ministry of Finance</li>
+
+                    <li>Commerce & Industry</li>
+
+                    <li>Investment Promotion</li>
+
+                    <li>Planning Commission</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Environment -->
+
+            <div class="category-box">
+
+                <div class="category-icon">
+
+                    <i class="fa fa-tree"></i>
+
+                </div>
+
+                <h3>Environment</h3>
+
+                <ul>
+
+                    <li>Ministry of Environment</li>
+
+                    <li>Waste Management</li>
+
+                    <li>Climate Initiatives</li>
+
+                    <li>Urban Sanitation</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="government-timeline">
+
+    <div class="container">
+
+        <div class="timeline-header">
+
+            <span>OUR JOURNEY</span>
+
+            <h2>Development Timeline</h2>
+
+            <p>
+                Key milestones highlighting Kwara State's commitment to sustainable
+                development, innovation, and improved public service delivery.
+            </p>
+
+        </div>
+
+        <div class="timeline">
+
+            <!-- Item 1 -->
+            <div class="timeline-item left">
+
+                <div class="timeline-content">
+
+                    <span class="year">2019</span>
+
+                    <h3>Infrastructure Renewal</h3>
+
+                    <p>
+                        Major investments were made in road rehabilitation,
+                        bridges and urban infrastructure across the state.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Item 2 -->
+
+            <div class="timeline-item right">
+
+                <div class="timeline-content">
+
+                    <span class="year">2020</span>
+
+                    <h3>Healthcare Improvement</h3>
+
+                    <p>
+                        Hospitals and primary healthcare centres were upgraded
+                        to improve access to quality healthcare services.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Item 3 -->
+
+            <div class="timeline-item left">
+
+                <div class="timeline-content">
+
+                    <span class="year">2021</span>
+
+                    <h3>Education Reform</h3>
+
+                    <p>
+                        Schools received modern learning facilities,
+                        classroom renovations and teacher support programmes.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Item 4 -->
+
+            <div class="timeline-item right">
+
+                <div class="timeline-content">
+
+                    <span class="year">2022</span>
+
+                    <h3>Agricultural Development</h3>
+
+                    <p>
+                        Programmes supporting farmers, irrigation projects,
+                        and food security initiatives were expanded.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Item 5 -->
+
+            <div class="timeline-item left">
+
+                <div class="timeline-content">
+
+                    <span class="year">2023</span>
+
+                    <h3>Digital Transformation</h3>
+
+                    <p>
+                        Government services began embracing digital platforms
+                        to improve efficiency and citizen engagement.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Item 6 -->
+
+            <div class="timeline-item right">
+
+                <div class="timeline-content">
+
+                    <span class="year">2024</span>
+
+                    <h3>Sustainable Growth</h3>
+
+                    <p>
+                        Continued investments in infrastructure,
+                        environmental sustainability and economic development.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="ministry-finder">
+
+    <div class="container">
+
+        <div class="finder-header">
+
+            <span>MINISTRY FINDER</span>
+
+            <h2>Find the Right Ministry</h2>
+
+            <p>
+                Search for a ministry by name to quickly access its
+                responsibilities and information.
+            </p>
+
+        </div>
+
+        <div class="search-box">
+
+            <i class="fa fa-search"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Ministry..."
+            >
+
+        </div>
+
+        <div class="finder-grid" id="ministryList">
+
+            <div class="finder-card">
+
+                <h4>Ministry of Health</h4>
+
+                <p>
+                    Healthcare, hospitals,
+                    disease prevention and medical services.
+                </p>
+
+            </div>
+
+            <div class="finder-card">
+
+                <h4>Ministry of Education</h4>
+
+                <p>
+                    Schools, teachers,
+                    curriculum and learning development.
+                </p>
+
+            </div>
+
+            <div class="finder-card">
+
+                <h4>Ministry of Works</h4>
+
+                <p>
+                    Roads, bridges,
+                    public buildings and infrastructure.
+                </p>
+
+            </div>
+
+            <div class="finder-card">
+
+                <h4>Ministry of Agriculture</h4>
+
+                <p>
+                    Farming,
+                    food security
+                    and livestock development.
+                </p>
+
+            </div>
+
+            <div class="finder-card">
+
+                <h4>Ministry of Environment</h4>
+
+                <p>
+                    Environmental protection,
+                    sanitation
+                    and climate initiatives.
+                </p>
+
+            </div>
+
+            <div class="finder-card">
+
+                <h4>Ministry of Water Resources</h4>
+
+                <p>
+                    Water supply,
+                    irrigation
+                    and sanitation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="government-overview">
+
+    <div class="container">
+
+        <div class="overview-header">
+
+            <span>GOVERNMENT AT A GLANCE</span>
+
+            <h2>Kwara State in Numbers</h2>
+
+            <p>
+                A snapshot of key information about the structure and services
+                of the Kwara State Government.
+            </p>
+
+        </div>
+
+        <div class="overview-grid">
+
+            <!-- Card -->
+
+            <div class="overview-card">
+
+                <i class="fa fa-building"></i>
+
+                <h3>Government Ministries</h3>
+
+                <h1>24</h1>
+
+                <p>
+                    Ministries responsible for governance,
+                    development and public services.
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="overview-card">
+
+                <i class="fa fa-map-marker"></i>
+
+                <h3>Local Government Areas</h3>
+
+                <h1>16</h1>
+
+                <p>
+                    Administrative divisions working
+                    closely with the State Government.
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="overview-card">
+
+                <i class="fa fa-users"></i>
+
+                <h3>Population</h3>
+
+                <h1>3M+</h1>
+
+                <p>
+                    Citizens benefiting from government
+                    programmes and services.
+                </p>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="overview-card">
+
+                <i class="fa fa-briefcase"></i>
+
+                <h3>Development Projects</h3>
+
+                <h1>180+</h1>
+
+                <p>
+                    Projects improving infrastructure,
+                    healthcare and education.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="governor-message">
+
+    <div class="container">
+
+        <div class="message-wrapper">
+
+            <!-- Governor Image -->
+
+            <div class="governor-image">
+
+                <img src="{% static 'img/bg-img/govi.jpg' %}" alt="Governor of Kwara State">
+            </div>
+
+            <!-- Message -->
+
+            <div class="governor-content">
+
+                <span class="message-tag">
+
+                    GOVERNOR'S MESSAGE
+
+                </span>
+
+                <h2>
+
+                    A Commitment to Progress,
+                    Innovation & Good Governance
+
+                </h2>
+
+                <div class="quote-icon">
+
+                    <i class="fa fa-quote-left"></i>
+
+                </div>
+
+                <p>
+
+                    Our administration remains committed to building a stronger,
+                    more prosperous Kwara State through transparent governance,
+                    strategic investments, quality public services and sustainable
+                    development. Every ministry plays a critical role in delivering
+                    impactful programmes that improve the lives of our citizens and
+                    position our state for long-term growth.
+
+                </p>
+
+                <div class="signature">
+
+                    <h4>Governor of Kwara State</h4>
+
+                    <span>Executive Governor</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="ministry-contact-directory">
+
+    <div class="container">
+
+        <div class="directory-title">
+
+            <span>CONTACT DIRECTORY</span>
+
+            <h2>Ministry Contact Information</h2>
+
+            <p>
+                Find the contact details of government ministries and departments.
+                Reach the appropriate office for enquiries, support, or public services.
+            </p>
+
+        </div>
+
+        <div class="table-responsive">
+
+            <table class="directory-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Ministry</th>
+
+                        <th>Office Location</th>
+
+                        <th>Telephone</th>
+
+                        <th>Email</th>
+
+                        <th></th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Ministry of Health</td>
+
+                        <td>State Secretariat, Ilorin</td>
+
+                        <td>+234 XXX XXX XXXX</td>
+
+                        <td>health@kwara.gov.ng</td>
+
+                        <td>
+                            <a href="#" class="table-btn">Visit</a>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Ministry of Education</td>
+
+                        <td>State Secretariat, Ilorin</td>
+
+                        <td>+234 XXX XXX XXXX</td>
+
+                        <td>education@kwara.gov.ng</td>
+
+                        <td>
+                            <a href="#" class="table-btn">Visit</a>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Ministry of Works</td>
+
+                        <td>State Secretariat, Ilorin</td>
+
+                        <td>+234 XXX XXX XXXX</td>
+
+                        <td>works@kwara.gov.ng</td>
+
+                        <td>
+                            <a href="#" class="table-btn">Visit</a>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Ministry of Agriculture</td>
+
+                        <td>State Secretariat, Ilorin</td>
+
+                        <td>+234 XXX XXX XXXX</td>
+
+                        <td>agriculture@kwara.gov.ng</td>
+
+                        <td>
+                            <a href="#" class="table-btn">Visit</a>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Ministry of Environment</td>
+
+                        <td>State Secretariat, Ilorin</td>
+
+                        <td>+234 XXX XXX XXXX</td>
+
+                        <td>environment@kwara.gov.ng</td>
+
+                        <td>
+                            <a href="#" class="table-btn">Visit</a>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Ministry of Finance</td>
+
+                        <td>State Secretariat, Ilorin</td>
+
+                        <td>+234 XXX XXX XXXX</td>
+
+                        <td>finance@kwara.gov.ng</td>
+
+                        <td>
+                            <a href="#" class="table-btn">Visit</a>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="development-pillars">
+
+    <div class="container">
+
+        <div class="pillar-heading">
+
+            <span>OUR PRIORITIES</span>
+
+            <h2>Strategic Development Pillars</h2>
+
+            <p>
+                Kwara State Government remains committed to sustainable growth
+                through strategic investments across key sectors that improve
+                the quality of life for all residents.
+            </p>
+
+        </div>
+
+        <div class="pillar-grid">
+
+            <!-- Item -->
+
+            <div class="pillar-item">
+
+                <div class="pillar-icon">
+                    <i class="fa fa-road"></i>
+                </div>
+
+                <h4>Infrastructure</h4>
+
+                <p>
+                    Expanding roads, bridges,
+                    housing and public facilities.
+                </p>
+
+            </div>
+
+            <!-- Item -->
+
+            <div class="pillar-item">
+
+                <div class="pillar-icon">
+                    <i class="fa fa-heartbeat"></i>
+                </div>
+
+                <h4>Healthcare</h4>
+
+                <p>
+                    Accessible healthcare,
+                    modern hospitals and disease prevention.
+                </p>
+
+            </div>
+
+            <!-- Item -->
+
+            <div class="pillar-item">
+
+                <div class="pillar-icon">
+                    <i class="fa fa-graduation-cap"></i>
+                </div>
+
+                <h4>Education</h4>
+
+                <p>
+                    Better schools,
+                    digital learning
+                    and teacher development.
+                </p>
+
+            </div>
+
+            <!-- Item -->
+
+            <div class="pillar-item">
+
+                <div class="pillar-icon">
+                    <i class="fa fa-leaf"></i>
+                </div>
+
+                <h4>Agriculture</h4>
+
+                <p>
+                    Food security,
+                    modern farming
+                    and rural prosperity.
+                </p>
+
+            </div>
+
+            <!-- Item -->
+
+            <div class="pillar-item">
+
+                <div class="pillar-icon">
+                    <i class="fa fa-laptop"></i>
+                </div>
+
+                <h4>Digital Innovation</h4>
+
+                <p>
+                    Technology-driven governance
+                    and smart public services.
+                </p>
+
+            </div>
+
+            <!-- Item -->
+
+            <div class="pillar-item">
+
+                <div class="pillar-icon">
+                    <i class="fa fa-tree"></i>
+                </div>
+
+                <h4>Environment</h4>
+
+                <p>
+                    Climate resilience,
+                    sanitation
+                    and greener communities.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="ministry-news">
+
+    <div class="container">
+
+        <div class="news-header">
+
+            <span>LATEST UPDATES</span>
+
+            <h2>News & Announcements</h2>
+
+            <p>
+                Stay informed with the latest government initiatives, ministry
+                activities, public notices, and development programmes across
+                Kwara State.
+            </p>
+
+        </div>
+
+        <div class="news-grid">
+
+            <!-- News 1 -->
+
+            <div class="news-card">
+
+                <div class="news-image">
+
+                    <img src="{% static 'img/bg-img/minis.jpg' %}" alt="">
+
+                    <span>Health</span>
+
+                </div>
+
+                <div class="news-content">
+
+                    <small>
+                        <i class="fa fa-calendar"></i>
+                        July 22, 2026
+                    </small>
+
+                    <h3>
+
+                        Government Launches New Primary Healthcare Centres
+
+                    </h3>
+
+                    <p>
+
+                        The Ministry of Health commissions new healthcare
+                        facilities to improve access to quality medical services.
+
+                    </p>
+
+                    <a href="#">
+
+                        Read More
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- News 2 -->
+
+            <div class="news-card">
+
+                <div class="news-image">
+
+                    <img src="{% static 'img/bg-img/sminis.jpg' %}" alt="">
+
+                    <span>Education</span>
+
+                </div>
+
+                <div class="news-content">
+
+                    <small>
+
+                        <i class="fa fa-calendar"></i>
+
+                        July 18, 2026
+
+                    </small>
+
+                    <h3>
+
+                        Digital Learning Initiative Expanded Across Schools
+
+                    </h3>
+
+                    <p>
+
+                        More public schools receive digital learning resources
+                        and classroom upgrades.
+
+                    </p>
+
+                    <a href="#">
+
+                        Read More
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- News 3 -->
+
+            <div class="news-card">
+
+                <div class="news-image">
+
+                    <img src="{% static 'img/bg-img/rminis.jpg' %}" alt="">
+
+                    <span>Infrastructure</span>
+
+                </div>
+
+                <div class="news-content">
+
+                    <small>
+
+                        <i class="fa fa-calendar"></i>
+
+                        July 10, 2026
+
+                    </small>
+
+                    <h3>
+
+                        Road Rehabilitation Projects Continue Statewide
+
+                    </h3>
+
+                    <p>
+
+                        Ongoing road construction and rehabilitation projects
+                        improve connectivity across Kwara State.
+
+                    </p>
+
+                    <a href="#">
+
+                        Read More
+
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- News 4 -->
+
+<div class="news-card">
+
+    <div class="news-image">
+
+        <img src="{% static 'img/bg-img/kwagric.jpg' %}" alt="">
+
+        <span>Agriculture</span>
+
+    </div>
+
+    <div class="news-content">
+
+        <small>
+
+            <i class="fa fa-calendar"></i>
+
+            July 5, 2026
+
+        </small>
+
+        <h3>
+
+            Kwara State Boosts Agricultural Production Through Farmer Support
+
+        </h3>
+
+        <p>
+
+            The Ministry of Agriculture distributes improved seedlings,
+            fertilizers, and modern farming equipment to increase food
+            production and strengthen food security across the state.
+
+        </p>
+
+        <a href="#">
+
+            Read More
+
+        </a>
+
+    </div>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+{% endblock  %}

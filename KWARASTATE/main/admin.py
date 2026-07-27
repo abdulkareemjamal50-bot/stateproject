@@ -1,5 +1,5 @@
 from django.contrib import admin
-from.models import ContactMessage, BlogCategory, BlogPost
+from.models import ContactMessage, BlogCategory, BlogPost, Testimonial
 
 # Register your models here.
 @admin.register(ContactMessage)
@@ -12,7 +12,7 @@ class BlogCategoryAdmin(admin.ModelAdmin):
     list_display=("name",)
 
 
-@admin.register( BlogPost)
+@admin.register(BlogPost)
 class  BlogPostAdmin(admin.ModelAdmin):
     list_display=("title","category","published_date","is_published","created_at")
     list_filter= ("category","published_date", "is_published") 
@@ -24,3 +24,9 @@ class  BlogPostAdmin(admin.ModelAdmin):
     prepopulated_fields ={
         "slug":("title",)
     }
+
+@admin.register(Testimonial)
+class TestimonialAdmin(admin.ModelAdmin):
+    list_display=("name","role","ratings","is_active","created_at")
+
+

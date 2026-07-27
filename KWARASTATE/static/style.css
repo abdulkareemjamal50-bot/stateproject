@@ -2087,4 +2087,2315 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb:hover { background: #0e9c7f; }
 
 
+/* ==========================================
+PROJECT SLIDER
+========================================== */
 
+.project-card{
+
+background:#fff;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.4s;
+
+margin:15px;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.project-card img{
+
+width:100%;
+
+height:240px;
+
+object-fit:cover;
+
+}
+
+.project-info{
+
+padding:25px;
+
+}
+
+.project-info h4{
+
+font-size:23px;
+
+font-weight:700;
+
+margin:18px 0;
+
+color:#222;
+
+}
+
+.project-info p{
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+.project-info a{
+
+color:#0B6E4F;
+
+font-weight:700;
+
+text-decoration:none;
+
+}
+
+.status{
+
+display:inline-block;
+
+padding:7px 18px;
+
+border-radius:50px;
+
+font-size:12px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+}
+
+.ongoing{
+
+background:#dff7e8;
+
+color:#15803d;
+
+}
+
+.completed{
+
+background:#dbeafe;
+
+color:#1d4ed8;
+
+}
+
+.planned{
+
+background:#fff3cd;
+
+color:#b45309;
+
+}
+
+.project-slider .owl-nav{
+
+margin-top:30px;
+
+text-align:center;
+
+}
+
+.project-slider .owl-nav button{
+
+width:50px;
+
+height:50px;
+
+border-radius:50%!important;
+
+background:#0B6E4F!important;
+
+color:#fff!important;
+
+margin:0 8px;
+
+font-size:22px!important;
+
+}
+
+.government-section{
+    padding:90px 0;
+    background:#f8f9fa;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:40px;
+    font-weight:700;
+    color:#006B3F;
+}
+
+.section-title p{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+}
+
+.government-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:30px;
+}
+
+.government-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.government-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.government-card:hover img{
+    transform:scale(1.08);
+}
+
+.government-card .government-overlay {
+    position: absolute !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    background: #ffffff !important;
+    padding: 12px 28px !important;
+    color: #006B3F !important;
+    border-left: 5px solid #006B3F !important;
+    border-radius: 9px !important;
+}
+.government-overlay h4{
+    margin:0;
+    font-size:20px;
+}
+
+.ministries-about{
+
+    padding:100px 0;
+
+    background:#fff;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    background:#eaf7ef;
+
+    color:#006B3F;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+.about-content h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:#222;
+
+    line-height:1.3;
+
+}
+
+.about-content p{
+
+    font-size:17px;
+
+    color:#666;
+
+    line-height:1.9;
+
+}
+
+.about-features{
+
+    margin-top:35px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.feature-item{
+
+    font-weight:600;
+
+    color:#222;
+
+}
+
+.feature-item i{
+
+    color:#0b8a44;
+
+    margin-right:10px;
+
+}
+.ministries-directory{
+
+    padding:100px 0;
+
+    background:#f8fafc;
+
+}
+
+.directory-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.directory-header span{
+
+    color:#0b8a44;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+}
+
+.directory-header h2{
+
+    font-size:42px;
+
+    margin:20px 0;
+
+    color:#222;
+
+}
+
+.directory-header p{
+
+    width:65%;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.directory-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:35px;
+
+}
+
+.directory-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    transition:.4s;
+
+    border:1px solid #eee;
+
+}
+
+.directory-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+
+.directory-icon{
+
+    width:70px;
+
+    height:70px;
+
+    background:#0b8a44;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+.directory-card h3{
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.directory-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.directory-info{
+
+    margin:25px 0;
+
+}
+
+.directory-info span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#555;
+
+}
+
+.directory-info i{
+
+    color:#0b8a44;
+
+    margin-right:8px;
+
+}
+
+.directory-btn{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    background:#0b8a44;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.directory-btn:hover{
+
+    background:#066332;
+
+    color:#fff;
+
+}
+.featured-ministry{
+
+    padding:110px 0;
+
+    background:#ffffff;
+
+}
+
+.featured-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.featured-image{
+
+    position:relative;
+
+}
+
+.featured-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    height:620px;
+
+    object-fit:cover;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.featured-badge{
+
+    position:absolute;
+
+    top:30px;
+
+    left:30px;
+
+    background:#0b8a44;
+
+    color:#fff;
+
+    padding:12px 25px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+}
+
+.featured-tag{
+
+    color:#0b8a44;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+}
+
+.featured-content h2{
+
+    font-size:46px;
+
+    margin:18px 0;
+
+    color:#222;
+
+}
+
+.featured-content p{
+
+    color:#666;
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+.achievement-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin:45px 0;
+
+}
+
+.achievement-box{
+
+    background:#f7f9fb;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.achievement-box:hover{
+
+    background:#0b8a44;
+
+    color:#fff;
+
+    transform:translateY(-8px);
+
+}
+
+.achievement-box h3{
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+.featured-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-green{
+
+    background:#0b8a44;
+
+    color:#fff;
+
+    padding:14px 35px;
+
+    border-radius:35px;
+
+    text-decoration:none;
+
+}
+
+.btn-green:hover{
+
+    background:#066332;
+
+    color:#fff;
+
+}
+
+.btn-outline{
+
+    border:2px solid #0b8a44;
+
+    color:#0b8a44;
+
+    padding:14px 35px;
+
+    border-radius:35px;
+
+    text-decoration:none;
+
+}
+
+.btn-outline:hover{
+
+    background:#0b8a44;
+
+    color:#fff;
+
+}
+
+@media(max-width:991px){
+
+.featured-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.featured-image img{
+
+height:450px;
+
+}
+
+}
+.leadership-section{
+
+    padding:110px 0;
+
+    background:#f8f9fa;
+
+}
+
+.section-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-header span{
+
+    color:#0b8a44;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.section-header h2{
+
+    font-size:42px;
+
+    margin:15px 0;
+
+}
+
+.section-header p{
+
+    width:65%;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.leadership-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+}
+
+.leader-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+}
+
+.leader-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.leader-card img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+}
+
+.leader-content{
+
+    padding:30px;
+
+}
+
+.leader-content h3{
+
+    margin-bottom:8px;
+
+    font-size:26px;
+
+}
+
+.leader-content span{
+
+    color:#0b8a44;
+
+    font-weight:600;
+
+}
+
+.leader-content p{
+
+    margin:20px 0;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.leader-content a{
+
+    text-decoration:none;
+
+    color:#0b8a44;
+
+    font-weight:bold;
+
+}
+.ministry-categories{
+
+    padding:110px 0;
+
+    background:#ffffff;
+
+}
+
+.category-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.category-header span{
+
+    color:#0b8a44;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.category-header h2{
+
+    font-size:44px;
+
+    margin:18px 0;
+
+}
+
+.category-header p{
+
+    width:65%;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+}
+
+.category-box{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    border-top:5px solid #0b8a44;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.category-box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.category-icon{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    background:#eef8f2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    color:#0b8a44;
+
+    margin-bottom:25px;
+
+}
+
+.category-box h3{
+
+    margin-bottom:20px;
+
+    font-size:25px;
+
+}
+
+.category-box ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.category-box li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid #ececec;
+
+    color:#555;
+
+}
+
+.category-box li:last-child{
+
+    border-bottom:none;
+
+}
+/* ===========================
+   GOVERNMENT TIMELINE
+=========================== */
+
+.government-timeline{
+
+    padding:110px 0;
+
+    background:#f8f9fa;
+
+}
+
+.timeline-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.timeline-header span{
+
+    color:#0b8a44;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.timeline-header h2{
+
+    font-size:45px;
+
+    margin:18px 0;
+
+}
+
+.timeline-header p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    width:4px;
+
+    height:100%;
+
+    background:#0b8a44;
+
+    transform:translateX(-50%);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    width:50%;
+
+    padding:30px 40px;
+
+}
+
+.timeline-item.left{
+
+    left:0;
+
+}
+
+.timeline-item.right{
+
+    left:50%;
+
+}
+
+.timeline-content{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    position:relative;
+
+}
+
+.timeline-content:hover{
+
+    transform:translateY(-8px);
+
+    transition:.3s;
+
+}
+
+.timeline-content .year{
+
+    display:inline-block;
+
+    background:#0b8a44;
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+.timeline-content h3{
+
+    margin-bottom:15px;
+
+}
+
+.timeline-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* Circle */
+
+.timeline-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:50px;
+
+    width:20px;
+
+    height:20px;
+
+    background:#0b8a44;
+
+    border:4px solid white;
+
+    border-radius:50%;
+
+    z-index:2;
+
+}
+
+.timeline-item.left::after{
+
+    right:-10px;
+
+}
+
+.timeline-item.right::after{
+
+    left:-10px;
+
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+.timeline::before{
+
+left:20px;
+
+}
+
+.timeline-item{
+
+width:100%;
+
+left:0 !important;
+
+padding-left:60px;
+
+padding-right:0;
+
+margin-bottom:40px;
+
+}
+
+.timeline-item::after{
+
+left:10px;
+
+}
+
+}
+/*=========================
+    MINISTRY FINDER
+==========================*/
+
+.ministry-finder{
+
+    padding:110px 0;
+
+    background:#fff;
+
+}
+
+.finder-header{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.finder-header span{
+
+    color:#0b8a44;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.finder-header h2{
+
+    font-size:45px;
+
+    margin:18px 0;
+
+}
+
+.finder-header p{
+
+    color:#666;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+.search-box{
+
+    max-width:700px;
+
+    margin:40px auto 70px;
+
+    position:relative;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:18px 20px 18px 60px;
+
+    border:none;
+
+    border-radius:50px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    font-size:17px;
+
+}
+
+.search-box i{
+
+    position:absolute;
+
+    left:25px;
+
+    top:22px;
+
+    color:#0b8a44;
+
+    font-size:20px;
+
+}
+
+.finder-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.finder-card{
+
+    padding:30px;
+
+    border-radius:15px;
+
+    background:#f7f8fa;
+
+    transition:.4s;
+
+}
+
+.finder-card:hover{
+
+    background:#0b8a44;
+
+    color:#fff;
+
+    transform:translateY(-10px);
+
+}
+
+.finder-card h4{
+
+    margin-bottom:15px;
+
+}
+/*============================
+   GOVERNMENT OVERVIEW
+=============================*/
+
+.government-overview{
+
+    padding:110px 0;
+
+    background:#f4f7f9;
+
+}
+
+.overview-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.overview-header span{
+
+    color:#0b8a44;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.overview-header h2{
+
+    font-size:45px;
+
+    margin:18px 0;
+
+    color:#222;
+
+}
+
+.overview-header p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.overview-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+.overview-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    border-bottom:5px solid transparent;
+
+}
+
+.overview-card:hover{
+
+    transform:translateY(-12px);
+
+    border-bottom:5px solid #0b8a44;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.overview-card i{
+
+    font-size:42px;
+
+    color:#0b8a44;
+
+    margin-bottom:25px;
+
+}
+
+.overview-card h3{
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+}
+
+.overview-card h1{
+
+    font-size:55px;
+
+    color:#0b8a44;
+
+    margin-bottom:15px;
+
+}
+
+.overview-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+/*==============================
+      GOVERNOR MESSAGE
+===============================*/
+
+.governor-message{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.message-wrapper{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.governor-image{
+
+    position:relative;
+
+}
+
+.governor-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+
+}
+
+.message-tag{
+
+    display:inline-block;
+
+    padding:8px 20px;
+
+    background:#eef8f2;
+
+    color:#0b8a44;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+.governor-content h2{
+
+    font-size:46px;
+
+    line-height:1.3;
+
+    margin-bottom:30px;
+
+    color:#222;
+
+}
+
+.quote-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#0b8a44;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+.governor-content p{
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:2;
+
+}
+
+.signature{
+
+    margin-top:40px;
+
+    border-top:2px solid #eee;
+
+    padding-top:25px;
+
+}
+
+.signature h4{
+
+    margin-bottom:8px;
+
+    color:#0b8a44;
+
+}
+
+.signature span{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+@media(max-width:991px){
+
+.message-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.governor-image{
+
+max-width:420px;
+
+margin:auto;
+
+}
+
+.governor-content h2{
+
+font-size:36px;
+
+}
+
+}
+/*=============================
+   CONTACT DIRECTORY
+==============================*/
+
+.ministry-contact-directory{
+
+    padding:110px 0;
+
+    background:#f7f9fc;
+
+}
+
+.directory-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.directory-title span{
+
+    color:#0b8a44;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.directory-title h2{
+
+    font-size:45px;
+
+    margin:18px 0;
+
+    color:#222;
+
+}
+
+.directory-title p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+.directory-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.directory-table thead{
+
+    background:#0b8a44;
+
+    color:#fff;
+
+}
+
+.directory-table th{
+
+    padding:22px;
+
+    text-align:left;
+
+}
+
+.directory-table td{
+
+    padding:20px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.directory-table tbody tr{
+
+    transition:.3s;
+
+}
+
+.directory-table tbody tr:hover{
+
+    background:#f0f9f4;
+
+}
+
+.table-btn{
+
+    display:inline-block;
+
+    background:#0b8a44;
+
+    color:#fff;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.table-btn:hover{
+
+    background:#066332;
+
+    color:#fff;
+
+}
+
+.table-responsive{
+
+    overflow-x:auto;
+
+}
+/*==========================
+   DEVELOPMENT PILLARS
+===========================*/
+
+.development-pillars{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.pillar-heading{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.pillar-heading span{
+
+    color:#0b8a44;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.pillar-heading h2{
+
+    font-size:45px;
+
+    margin:18px 0;
+
+}
+
+.pillar-heading p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+
+.pillar-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+}
+
+.pillar-item{
+
+    text-align:center;
+
+    padding:45px 30px;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    background:#f8fafb;
+
+}
+
+.pillar-item:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.pillar-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#0b8a44;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.pillar-item h4{
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+.pillar-item p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+/*===================================
+        MINISTRY NEWS
+====================================*/
+
+.ministry-news{
+
+    padding:120px 0;
+
+    background:#f8fafc;
+
+}
+
+.news-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.news-header span{
+
+    color:#0b8a44;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.news-header h2{
+
+    font-size:46px;
+
+    margin:18px 0;
+
+}
+
+.news-header p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+
+.news-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:35px;
+
+}
+
+.news-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.news-image{
+
+    position:relative;
+
+}
+
+.news-image img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.news-image span{
+
+    position:absolute;
+
+    top:20px;
+
+    left:20px;
+
+    background:#0b8a44;
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+}
+
+.news-content{
+
+    padding:30px;
+
+}
+
+.news-content small{
+
+    color:#888;
+
+}
+
+.news-content h3{
+
+    margin:18px 0;
+
+    font-size:24px;
+
+    line-height:1.5;
+
+}
+
+.news-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.news-content a{
+
+    color:#0b8a44;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+/*===================================
+INVESTMENT HERO
+===================================*/
+
+.investment-hero{
+
+    position:relative;
+    min-height:95vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+
+}
+
+.investment-hero img{
+
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.investment-overlay{
+
+    position:absolute;
+    inset:0;
+    background:#006B3F;
+
+}
+
+.investment-hero .container{
+
+    position:relative;
+    z-index:2;
+
+}
+
+.investment-content{
+
+    color:#fff;
+
+}
+
+.investment-badge{
+
+    display:inline-block;
+    background:#C8A84F;
+    color:#fff;
+    padding:10px 28px;
+    border-radius:50px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:25px;
+
+}
+
+.investment-content h1{
+
+    font-size:58px;
+    line-height:1.2;
+    font-weight:700;
+    margin-bottom:25px;
+    color:#fff;
+
+}
+
+.investment-content p{
+
+    font-size:18px;
+    line-height:1.9;
+    margin-bottom:40px;
+    color:#f4f4f4;
+
+}
+
+.investment-buttons{
+
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+
+}
+
+/*==============================
+Primary Button
+===============================*/
+
+.theme-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px 36px;
+    background:rgba(0, 128, 0, 0.247);
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    border:2px solid #006B3F;
+    border-radius:50px;
+    transition:all .35s ease;
+    box-shadow:0 8px 20px rgba(0,107,63,.18);
+}
+
+.theme-btn:hover{
+    background:#004F2E;
+    border-color:#004F2E;
+    color:#fff;
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(0,107,63,.28);
+}
+
+/*==============================
+Outline Button
+===============================*/
+
+.outline-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px 36px;
+    background:#fff;
+    color:#006B3F;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    border:2px solid #fff;
+    border-radius:50px;
+    transition:all .35s ease;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.outline-btn:hover{
+    background:transparent;
+    border-color:#fff;
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+/*=========================
+FACT CARDS
+==========================*/
+
+.investment-facts{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+
+}
+
+.fact-card{
+
+    background:white;
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,.15);
+    padding:35px 20px;
+    border-radius:15px;
+    text-align:center;
+    color:#006B3F;
+    transition:.4s;
+
+}
+
+.fact-card:hover{
+
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.18);
+
+}
+
+.fact-card h2{
+
+    color:#006B3F;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+
+}
+
+.fact-card span{
+
+    font-size:16px;
+    line-height:1.6;
+
+}
+
+/*=========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:991px){
+
+.investment-hero{
+
+padding:120px 0 80px;
+
+}
+
+.investment-content{
+
+text-align:center;
+
+}
+
+.investment-content h1{
+
+font-size:42px;
+
+}
+
+.investment-buttons{
+
+justify-content:center;
+
+}
+
+.investment-facts{
+
+margin-top:50px;
+
+}
+
+}
+
+@media(max-width:767px){
+
+.investment-content h1{
+
+font-size:32px;
+
+}
+
+.investment-facts{
+
+grid-template-columns:1fr;
+
+}
+
+.theme-btn,
+.outline-btn{
+
+width:100%;
+text-align:center;
+
+}
+
+}
+/*====================================
+WHY INVEST
+=====================================*/
+
+.why-invest{
+
+    padding:100px 0;
+    background:#fff;
+
+}
+
+.section-title{
+
+    text-align:center;
+    max-width:760px;
+    margin:auto;
+
+}
+
+.section-title span{
+
+    color:#006B3F;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:14px;
+
+}
+
+.section-title h2{
+
+    color:#103B2C;
+    font-size:42px;
+    margin:18px 0;
+
+}
+
+.section-title p{
+
+    color:#666;
+    line-height:1.9;
+
+}
+
+.why-card{
+
+    background:#fff;
+    border:1px solid #E8ECEA;
+    border-radius:12px;
+    padding:40px 30px;
+    text-align:center;
+    transition:.35s;
+    height:100%;
+    box-shadow:0 8px 20px rgba(0,0,0,.04);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.10);
+
+}
+
+.why-icon{
+
+    width:75px;
+    height:75px;
+    margin:auto;
+    background:#F3F9F5;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+
+}
+
+.why-icon i{
+
+    font-size:30px;
+    color:#006B3F;
+
+}
+
+.why-card h4{
+
+    color:#103B2C;
+    margin-bottom:18px;
+    font-size:23px;
+
+}
+
+.why-card p{
+
+    color:#666;
+    line-height:1.8;
+
+}
