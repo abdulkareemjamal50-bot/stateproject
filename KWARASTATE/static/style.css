@@ -4217,10 +4217,7 @@ FACT CARDS
 }
 
 .fact-card:hover{
-
     transform:translateY(-8px);
-    background:rgba(255,255,255,.18);
-
 }
 
 .fact-card h2{
@@ -4397,5 +4394,100 @@ WHY INVEST
 
     color:#666;
     line-height:1.8;
+
+}
+/*=====================================
+FEATURED PROJECTS
+======================================*/
+
+.featured-projects{
+
+    padding:100px 0;
+    background:#006B3F;
+
+}
+
+.featured-projects .section-title span{
+
+    color:#D9F3E5;
+    font-weight:600;
+    letter-spacing:2px;
+
+}
+
+.featured-projects .section-title h2{
+
+    color:#fff;
+    margin:20px 0;
+
+}
+
+.featured-projects .section-title p{
+
+    color:#d6e9df;
+
+}
+
+.project-card{
+
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.35s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.project-card img{
+
+    width:100%;
+    height:240px;
+    object-fit:cover;
+
+}
+
+.project-info{
+
+    padding:30px;
+
+}
+
+.project-badge{
+
+    display:inline-block;
+    background:#E9F6EF;
+    color:#006B3F;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+.project-info h4{
+
+    color:#103B2C;
+    margin-bottom:15px;
+
+}
+
+.project-info p{
+
+    color:#666;
+    line-height:1.8;
+
+}
+
+.project-info a{
+
+    color:#006B3F;
+    text-decoration:none;
+    font-weight:600;
 
 }
